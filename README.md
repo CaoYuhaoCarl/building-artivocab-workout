@@ -4,6 +4,23 @@
 
 `building-artivocab-workout` 是一个 Codex skill，用来从新闻、短文或 Day_test 模板中生成结构化的中英双语阅读练习。它不只是挖空单词，而是围绕理解、语法敏感度、搭配、词形变化和输出迁移，生成一套完整的课堂训练材料。
 
+## 安装方法
+
+推荐使用 `npx skills` CLI 安装。它会自动识别你正在使用的 Agent（Claude Code、Codex 等），并把 skill 放到对应目录。
+
+```bash
+npx skills add CaoYuhaoCarl/building-artivocab-workout
+```
+
+常用管理指令：
+
+```bash
+npx skills list                 # 查看已安装的 skills
+npx skills find web-design      # 在仓库内搜索 skill
+npx skills update               # 升级已安装的 skills
+npx skills remove kb-retriever  # 卸载指定 skill
+```
+
 ## 适合什么时候用
 
 - 你有一篇英文文章，想提取核心词汇并做成阅读练习。
