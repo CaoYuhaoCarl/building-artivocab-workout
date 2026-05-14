@@ -72,6 +72,7 @@ YYYY_MM_DD_article_name.md
 .
 ├── SKILL.md                         # skill 入口与核心工作流
 ├── README.md                        # 项目说明
+├── LICENSE                          # MIT 开源协议
 ├── assets/
 │   ├── config.md                    # 输出路径和命名规则
 │   ├── day_test_template_v2.md       # Day_test 空白模板
@@ -98,5 +99,9 @@ YYYY_MM_DD_article_name.md
 - **学习 skill 是什么**: [What are Skills?](https://support.claude.com/en/articles/12512176-what-are-skills) - Claude Help Center 对 skill 的概念、工作方式和适用场景做了快速解释。
 - **学习如何创建标准 skill**: [Introduction to agent skills](https://anthropic.skilljar.com/introduction-to-agent-skills/434525) - Anthropic 课程，覆盖 `SKILL.md` frontmatter、目录组织、触发描述和分发。
 - **理解 skill 与 hooks、subagents、MCP 的区别**: [Agent Skills with Anthropic](https://learn.deeplearning.ai/courses/agent-skills-with-anthropic/lesson/ldn5c3/introduction?startTime=0) - DeepLearning.AI 课程，从 tools、MCP、subagents 到组合式 agent workflow 做系统梳理。
+
+## 开源协议
+
+本项目基于 [MIT License](LICENSE) 开源。
 
 Contact: X [@CaoYuhaoCarl](https://x.com/CaoYuhaoCarl) · Telegram [@caoyuhaocarl](https://t.me/caoyuhaocarl) · WeChat `caoyuhaocarl`
