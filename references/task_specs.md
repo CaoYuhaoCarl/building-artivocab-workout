@@ -1,4 +1,4 @@
-# Task Specs — reading-vocab-cloze
+# Task Specs — building-artivocab-workout
 
 Detailed rules for each task. Read this before executing any of Step 0 / Task 1–7.
 

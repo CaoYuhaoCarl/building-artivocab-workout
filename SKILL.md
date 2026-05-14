@@ -1,9 +1,12 @@
 ---
-name: reading-vocab-cloze
+name: building-artivocab-workout
 description: "Build Chinese-English reading cloze worksheets from a reading passage or a markdown file. TRIGGER when: user pastes an article or news text and asks for vocabulary extraction, cloze blanks, or a reading worksheet; user says '做完形填空'、'出词汇题'、'帮我做阅读练习题'、'生成词汇表' or similar Chinese EFL requests; user provides a markdown file following the Day_test layout and wants it completed. Produces: B1-adapted passage, 20-word Group block (Task 1), full-masking article (Task 2), 10-word assessment list (Task 3), numbered cloze article (Task 4), answer-key highlighted article (Task 5), classroom output-activation prompts (Task 6), and advanced writing+reading training (Task 7)."
+metadata: 
+  - author: CaoYuhaoCarl
+  - version: 1.0.0
 ---
 
-# reading-vocab-cloze
+# building-artivocab-workout
 
 Goal: a completed Day_test-style worksheet that tests meaning, grammar sensitivity, collocation, morphology, and output transfer — not just blank recognition.
 

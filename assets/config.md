@@ -1,4 +1,4 @@
-# Config — reading-vocab-cloze
+# Config — building-artivocab-workout
 
 ## output_dir
 

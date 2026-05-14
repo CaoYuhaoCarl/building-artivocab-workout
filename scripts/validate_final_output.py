@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate final Task 4/Task 5 consistency for reading-vocab-cloze outputs."""
+"""Validate final Task 4/Task 5 consistency for building-artivocab-workout outputs."""
 
 from __future__ import annotations
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate a prepared Task 1 Group block for the reading-vocab-cloze skill."""
+"""Validate a prepared Task 1 Group block for the building-artivocab-workout skill."""
 
 from __future__ import annotations
 
