@@ -1,14 +1,18 @@
+<div align="center">
+<img src="assets/banner.png" alt="building-artivocab-workout banner">
+
 # building-artivocab-workout
 
-<p align="center">
-  <img src="assets/banner.png" alt="building-artivocab-workout banner">
+<div align="center">
 </p>
-
-<p align="center">
 <a href="SKILL.md"><img src="https://img.shields.io/badge/version-1.0.0-2563eb?style=flat-square" alt="Version 1.0.0"></a>
   <a href="#building-artivocab-workout"><img src="https://img.shields.io/badge/Harness-Agent%20Skill-2f855a?style=flat-square" alt="Harness: Agent Skill"></a>
   <a href="#安装方法"><img src="https://img.shields.io/badge/install-npx%20skills-f97316?style=flat-square" alt="Install with npx skills"></a>
 </p>
+
+<br>
+
+</div>
 
 > Article -> Vocabulary + Reading + Writing: 把一篇英语文章变成可直接上课/练习使用的全面训练。
 
