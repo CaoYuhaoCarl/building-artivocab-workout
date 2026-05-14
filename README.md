@@ -1,33 +1,26 @@
 # building-artivocab-workout
 
-> Article + Vocabulary + Workout: 把一篇英语文章变成可直接上课使用的词汇完形训练。
+<p align="center">
+  <img src="assets/banner.png" alt="building-artivocab-workout banner">
+</p>
 
-`building-artivocab-workout` 是一个 Codex skill，用来从新闻、短文或 Day_test 模板中生成结构化的中英双语阅读练习。它不只是挖空单词，而是围绕理解、语法敏感度、搭配、词形变化和输出迁移，生成一套完整的课堂训练材料。
+<p align="center">
+<a href="SKILL.md"><img src="https://img.shields.io/badge/version-1.0.0-2563eb?style=flat-square" alt="Version 1.0.0"></a>
+  <a href="#building-artivocab-workout"><img src="https://img.shields.io/badge/Harness-Agent%20Skill-2f855a?style=flat-square" alt="Harness: Agent Skill"></a>
+  <a href="#安装方法"><img src="https://img.shields.io/badge/install-npx%20skills-f97316?style=flat-square" alt="Install with npx skills"></a>
+</p>
+
+> Article -> Vocabulary + Reading + Writing: 把一篇英语文章变成可直接上课/练习使用的全面训练。
+
+`building-artivocab-workout` 是一个 skill，用来从新闻、短文或 Day_test 模板中生成结构化的中英双语阅读练习。它不只是挖空单词，而是围绕理解、语法敏感度、搭配、词形变化和输出迁移，生成一套完整的课堂训练材料。
 
 ## 安装方法
 
-推荐使用 `npx skills` CLI 安装。它会自动识别你正在使用的 Agent（Claude Code、Codex 等），并把 skill 放到对应目录。
+推荐使用 [`npx skills`](https://www.npmjs.com/package/skills) CLI 安装。它会自动识别你正在使用的 Agent（Claude Code、Codex、Gemini、Hermes、Openclaw等agent），并把 skill 放到对应目录。
 
 ```bash
 npx skills add CaoYuhaoCarl/building-artivocab-workout
 ```
-
-常用管理指令：
-
-```bash
-npx skills list                 # 查看已安装的 skills
-npx skills find web-design      # 在仓库内搜索 skill
-npx skills update               # 升级已安装的 skills
-npx skills remove kb-retriever  # 卸载指定 skill
-```
-
-## 推荐学习
-
-如果你想把这个 skill 做成可复用的长期工作流，推荐先看这几份资料：
-
-- **学习 skill 是什么**: [What are Skills?](https://support.claude.com/en/articles/12512176-what-are-skills) - Claude Help Center 对 skill 的概念、工作方式和适用场景做了快速解释。
-- **学习如何创建标准 skill**: [Introduction to agent skills](https://anthropic.skilljar.com/introduction-to-agent-skills/434525) - Anthropic 课程，覆盖 `SKILL.md` frontmatter、目录组织、触发描述和分发。
-- **理解 skill 与 hooks、subagents、MCP 的区别**: [Agent Skills with Anthropic](https://learn.deeplearning.ai/courses/agent-skills-with-anthropic/lesson/ldn5c3/introduction?startTime=0) - DeepLearning.AI 课程，从 tools、MCP、subagents 到组合式 agent workflow 做系统梳理。
 
 ## 适合什么时候用
 
@@ -52,13 +45,19 @@ npx skills remove kb-retriever  # 卸载指定 skill
 把文章或 Day_test Markdown 文件交给 Codex，并提出类似请求：
 
 ```text
-用 building-artivocab-workout 帮我把这篇文章做成词汇完形训练。
+用 building-artivocab-workout 帮我把这篇文章做成词汇完形训练。<直接粘贴文章到这儿>
 ```
 
 或：
 
 ```text
-帮我做阅读练习题，包含词汇表、完形填空和答案高亮。
+帮我做阅读练习题，包含词汇表、完形填空和答案高亮。<直接粘贴文章到这儿>
+```
+
+或：
+
+```text
+/building-artivocab-workout <直接粘贴文章到这儿>
 ```
 
 默认输出会保存到 `assets/config.md` 中配置的 `output_dir`，文件名采用：
@@ -85,13 +84,6 @@ YYYY_MM_DD_article_name.md
     └── validate_final_output.py      # 校验 Task 4 和 Task 5
 ```
 
-## 设计原则
-
-- **文章先行**: 所有任务都基于同一篇 worksheet article，避免词表、挖空和答案错位。
-- **课堂可用**: 输出不仅能做题，还能引导复述、总结、因果表达和角色回应。
-- **难度稳定**: 默认控制在 upper-A2/B1 到 B1 左右，保留必要事实和逻辑。
-- **可验证**: 关键任务配有脚本检查，减少空数、编号、答案高亮等机械错误。
-
 ## 维护提示
 
 - 修改执行逻辑时，优先更新 `SKILL.md`。
@@ -99,3 +91,12 @@ YYYY_MM_DD_article_name.md
 - 修改输出目录或文件命名时，更新 `assets/config.md`。
 - 修改 Task 1 格式时，更新 `assets/group_format_template.md`，并运行对应校验脚本。
 
+## 推荐学习
+
+如果你想把这个 skill 做成可复用的长期工作流，推荐先看这几份资料：
+
+- **学习 skill 是什么**: [What are Skills?](https://support.claude.com/en/articles/12512176-what-are-skills) - Claude Help Center 对 skill 的概念、工作方式和适用场景做了快速解释。
+- **学习如何创建标准 skill**: [Introduction to agent skills](https://anthropic.skilljar.com/introduction-to-agent-skills/434525) - Anthropic 课程，覆盖 `SKILL.md` frontmatter、目录组织、触发描述和分发。
+- **理解 skill 与 hooks、subagents、MCP 的区别**: [Agent Skills with Anthropic](https://learn.deeplearning.ai/courses/agent-skills-with-anthropic/lesson/ldn5c3/introduction?startTime=0) - DeepLearning.AI 课程，从 tools、MCP、subagents 到组合式 agent workflow 做系统梳理。
+
+Contact: X [@CaoYuhaoCarl](https://x.com/CaoYuhaoCarl) · Telegram [@caoyuhaocarl](https://t.me/caoyuhaocarl) · WeChat `caoyuhaocarl`
