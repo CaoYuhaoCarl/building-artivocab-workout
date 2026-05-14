@@ -16,7 +16,7 @@
 
 ## 安装方法
 
-推荐使用 [`npx skills`](https://www.npmjs.com/package/skills) CLI 安装。它会自动识别你正在使用的 Agent（Claude Code、Codex、Gemini、Hermes、Openclaw等agent），并把 skill 放到对应目录。
+推荐使用 [`npx skills`](https://www.npmjs.com/package/skills) CLI 一键安装。它会自动识别你正在使用的 Agent（Claude Code、Codex、Gemini、Hermes、Openclaw等agent），并把 skill 放到对应目录。
 
 ```bash
 npx skills add CaoYuhaoCarl/building-artivocab-workout
