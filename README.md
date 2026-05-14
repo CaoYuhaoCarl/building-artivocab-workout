@@ -21,6 +21,14 @@ npx skills update               # 升级已安装的 skills
 npx skills remove kb-retriever  # 卸载指定 skill
 ```
 
+## 推荐学习
+
+如果你想把这个 skill 做成可复用的长期工作流，推荐先看这几份资料：
+
+- **学习 skill 是什么**: [What are Skills?](https://support.claude.com/en/articles/12512176-what-are-skills) - Claude Help Center 对 skill 的概念、工作方式和适用场景做了快速解释。
+- **学习如何创建标准 skill**: [Introduction to agent skills](https://anthropic.skilljar.com/introduction-to-agent-skills/434525) - Anthropic 课程，覆盖 `SKILL.md` frontmatter、目录组织、触发描述和分发。
+- **理解 skill 与 hooks、subagents、MCP 的区别**: [Agent Skills with Anthropic](https://learn.deeplearning.ai/courses/agent-skills-with-anthropic/lesson/ldn5c3/introduction?startTime=0) - DeepLearning.AI 课程，从 tools、MCP、subagents 到组合式 agent workflow 做系统梳理。
+
 ## 适合什么时候用
 
 - 你有一篇英文文章，想提取核心词汇并做成阅读练习。
